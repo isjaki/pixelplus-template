@@ -25,7 +25,8 @@ body {
 .logo {
     position: absolute;
     left: 15%;
-    top: 28%;
+    top: 50%;
+    transform: translate(0, -50%);
 }
 
 .telnumber {
@@ -34,7 +35,8 @@ body {
     color: #767676;
     position: absolute;
     right: 15%;
-    top: 28%;
+    top: 50%;
+    transform: translate(0, -50%);
 }
 
 .menu {
@@ -73,17 +75,16 @@ body {
 }
 
 .slider {
-    background: #f8f8f8 url('slider.png') no-repeat 50% 100%;
+    background: #f8f8f8 url('img/slider.png') no-repeat 50% 100%;
     height: 400px;
 }
 
 .content {
     background-color: #ffffff;
-    height: 785px;
     margin-bottom: 230px;
     display: flex;
     justify-content: center;
-
+    padding-bottom: 195px;
 }
 
 .news {
@@ -92,10 +93,8 @@ body {
     font-size: 14px;
     line-height: 22px;
     width: 350px;
-    height: 560px;
     margin: 30px 60px 0 0;
-    padding: 24px 50px 0 34px;
-    /* float: left; */
+    padding: 24px 50px 80px 34px;
 }
   
 .news > h2 {
@@ -109,6 +108,7 @@ body {
 
 #archive {
     text-align: right;
+    margin-bottom: 0;
 }
 
 #archive span {
@@ -126,25 +126,26 @@ body {
     position: absolute;
     bottom: 0;
     width: 100%;
+    padding-bottom: ;
     background-color: #757575;
-    height: 220px;
     color: #ffffff;
     font-size: 14px;
     line-height: 22px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
 }
 
 .footer-about {
-    display: inline-block;
     margin-top: 45px;
     margin-left: 15%;
     vertical-align: top;
 }
 
 .footer-menu {
-    display: inline-block;
     margin-top: 45px;
     margin-left: 11.4%;
-    margin-right: 22.7%;
+    margin-bottom: 45px;
 }
 
 .footer-menu ul {
@@ -164,9 +165,6 @@ body {
 
 .footer-menu li a {
     text-decoration: none;
-}
-
-.footer-menu li a:link {
     color: #ffffff;
 }
 
@@ -177,9 +175,9 @@ body {
 .footer-company {
     padding: 0;
     margin-top: 45px;
-    display: inline-block;
     position: relative;
     vertical-align: top;
+    margin-left: 22.7%;
 }
 
 .footer-company span {
@@ -204,3 +202,43 @@ body {
         font-size: 25px;
     }
 }
+
+@media screen and (max-width: 1150px) {
+    .slider {
+        height: 0;
+    }
+}
+
+@media screen and (max-width: 940px) {
+
+    .content {
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .news {
+        background-color: #767676;
+        color: #ffffff;
+        font-size: 14px;
+        line-height: 22px;
+        width: 100%;
+        height: auto;
+        margin: 0 60px 0 0;
+        padding: 24px 50px 0 34px;
+        border-top: 20px solid #dbdbdb;
+    }
+
+    .about {
+        align-self: center;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .telnumber {
+        font-size: 25px;
+    }
+}
+
+
