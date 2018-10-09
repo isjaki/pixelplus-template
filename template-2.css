@@ -166,6 +166,10 @@ body {
     text-decoration: none;
 }
 
+.footer-menu li a:link {
+    color: #ffffff;
+}
+
 .footer-menu li a:visited {
     color: #ffffff;
 }
